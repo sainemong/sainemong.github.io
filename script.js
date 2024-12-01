@@ -15,7 +15,7 @@ const profiles = [
         name: "Thowai Wang",
         role: "Spy",
         bio: "Knows all the secrets.",
-        img: "Thowai.jpg"
+        img: "thowai.jpg"
     },
     {
         name: "Cho Ching",
