@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS-13</title>
-    <link rel="icon" href="fevicon.png" type="image/icon type">
+    <link rel="icon" href="fevicon.png" type="image/x-icon" sizes="56x56">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="MS-13 Logo">
+        </div>
+        <nav class="chatgpt-nav">
             <ul>
-                <li class="pop"><a href="#home">Home</a></li>
-                <li class="pop"><a href="#members">Members</a></li>
-                <li class="pop"><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
+            <div class="menu-icon" id="menu-icon" aria-label="Toggle menu">☰</div>
         </nav>
-        <h2>MS-13</h2>
     </header>
-    <section id="home">
-        <img class="logo" src="logo.png" height="250px" width="250px" alt="Logo" class="right">
-        <h2 class="left pop">Welcome to the <a href="https://www.facebook.com/profile.php?id=61566423547971">MS-13</a></h2>
-        <p class="left">Your gateway to the underworld of shadows.</p>
-        <p class="left">MS-13, a tight-knit community of friends where laughter, camaraderie, and unforgettable moments are at the heart of everything we do. We're more than a group—we're family, united by fun, mutual respect, and unwavering support. Whether it's sharing stories, creating memories, or just being there for each other, MS-13 is where friendships thrive and adventures never end!</p>
+    
+    <section id="home" class="home">
+        <div class="home-text">
+            <h2>Welcome to <a href="https://www.facebook.com/profile.php?id=61566423547971" target="_blank" rel="noopener noreferrer">MS-13</a></h2>
+            <p>Your gateway to the underworld of shadows.</p>
+            <p>MS-13 is a tight-knit community where loyalty, power, and brotherhood thrive.</p>
+            <p>MS-13, a tight-knit community of friends where laughter, camaraderie, and unforgettable moments are at the heart of everything we do. We're more than a group—we're family, united by fun, mutual respect, and unwavering support. Whether it's sharing stories, creating memories, or just being there for each other, MS-13 is where friendships thrive and adventures never end!</p>
+            <p>Are you ready to embrace the brotherhood?</p>
+        </div>
+        <img src="logo.png" alt="MS-13 Logo">
     </section>
-    <section id="members">
-        <h2 class="pop">Members</h2>
-        <div class="profiles" id="profiles"></div>
-    </section>
+    
+    
+    <div id="members">
+        <h2>Members</h2>
+        <div id="profiles"></div>
+    </div>
 
+    <!-- Modal to display profile details -->
     <div class="modal" id="profileModal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
@@ -38,14 +50,19 @@
             <p id="modalBio"></p>
         </div>
     </div>
-    <section id="about">
-        <p>As MS-13, we cherish every moment, every laugh, and every bond we've built together. Here's to many more adventures, unforgettable memories, and a friendship that lasts forever!</p>
-        <h3>connect us on </h3>
-        <h2 class="pop"><a href="https://www.facebook.com/profile.php?id=61566423547971">FACEBOOK</a></h2>
-    </section>
+
+    <div id="about">
+        <section>
+            <p>As MS-13, we rule the streets, protect our own, and never back down.</p>
+            <h3>Connect with us on:</h3>
+            <h2><a href="https://www.facebook.com/profile.php?id=61566423547971" target="_blank" rel="noopener noreferrer">FACEBOOK</a></h2>
+        </section>
+    </div>
+
     <footer>
         <p>© 2024 MS-13. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
-</html>
+</html>/
